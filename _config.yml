@@ -4,6 +4,8 @@ description: "Some short description of your blog can go here." # This will show
 theme: jekyll-theme-slate
 rss: rss
 
+
+
 kramdown:
   syntax_highlighter_opts:
     disable: true
