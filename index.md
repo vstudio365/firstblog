@@ -1,16 +1,22 @@
-### Jekyll Themes
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">        
+        {{ page.date | date: date_format }}
+      </time>
+      {% assign author = page.author | default: site.author %}
+      {%- if author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+      {%- endif -%}</p>
+  </header>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ObjectModel365/firstblog/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+  <div class="share-links">
+    {% include sharelinks.html %}
+  </div>
 
-### Support or Contact
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+    {% include navlinks.html %}
+  </div>
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
-
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
