@@ -1,7 +1,7 @@
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">POSTS</h1>
    <ul>
-  {% for post in site.posts %}
+  {% for post in site.categories %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
