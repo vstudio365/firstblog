@@ -1,22 +1,14 @@
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">        
-        {{ page.date | date: date_format }}
-      </time>
-      {% assign author = page.author | default: site.author %}
-      {%- if author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-      {%- endif -%}</p>
+    <h1 class="post-title p-name" itemprop="name headline">POSTS</h1>
+   <ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
   </header>
 
-  <div class="share-links">
-    {% include sharelinks.html %}
-  </div>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-    {% include navlinks.html %}
-  </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
