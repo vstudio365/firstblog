@@ -33,7 +33,7 @@ Web - https://oauth.pstmn.io/v1/callback
 
 ![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
 
-![screenshot]https://vstudio365.github.io/blog/assets/app-registration-form-01.jpg
+![screenshot](https://vstudio365.github.io/blog/assets/app-registration-form-01.jpg)
 
     
 #### Step 2: Configure HTTP Request in Postman to Obtain OAuth2 access token
