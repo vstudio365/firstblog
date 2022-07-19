@@ -29,6 +29,12 @@ Redirect Uri:
 Web - https://oauth.pstmn.io/v1/callback 
 // it means, redirect to Postman tool on successful authentication
 ```
+Name: `{friendly-name}`
+Supported Account Types: `... Single Tenant`
+Redirect Uri: 
+Web: `https://oauth.pstmn.io/v1/callback`
+// it means, redirect to Postman tool on successful authentication
+
 ![screenshot](https://github.com/vstudio365/blog/assets/app-registration-form-01.jpg)
 
 ![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
