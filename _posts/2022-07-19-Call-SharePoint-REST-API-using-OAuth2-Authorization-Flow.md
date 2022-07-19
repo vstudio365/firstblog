@@ -22,14 +22,19 @@ In this Article, You'll learn how to **Call SharePoint REST API** from Postman u
 1. Go to Azure AD (Azure Subscription linked to the Azure AD used by your Office 365 tenant)
 1. Select App Registration > New Registration > Fill out the form
 
-    ```
-    Name: {friendly-name}
-    Supported Account Types: ... Single Tenant
-    Redirect Uri: 
-    Web - https://oauth.pstmn.io/v1/callback 
-    // it means, redirect to Postman tool on successful authentication
-    ```
-    ![New App Registration Form](https://github.com/vstudio365/blog/blob/116c955df3679a3325217c84573911823c10e3d9/assets/app-registration-form-01.png)
+```
+Name: {friendly-name}
+Supported Account Types: ... Single Tenant
+Redirect Uri: 
+Web - https://oauth.pstmn.io/v1/callback 
+// it means, redirect to Postman tool on successful authentication
+```
+![New App Registration Form](https://github.com/vstudio365/blog/blob/116c955df3679a3325217c84573911823c10e3d9/assets/app-registration-form-01.jpg)
+
+![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+
+
+
     
 #### Step 2: Configure HTTP Request in Postman to Obtain OAuth2 access token
 
