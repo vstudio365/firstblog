@@ -35,17 +35,12 @@ In this Article, You'll learn how to **Call SharePoint REST API** from Postman u
 
 1. Goto Postman
 1. Create HTTP Request
-
 ```
-HTTP Method :   GET  
-HTTP Request :  https://<tenant>.sharepoint.com/_api/web/lists  
-Headers : 
-| Accept           | application/json;odata=verbose
+HTTP Request :  https://<tenant>.sharepoint.com/_api/web/lists
 ```
-
-| Accept           | application/json;odata=verbose
-
 1. Go to **Authorization** tab, select Oauth 2.0, and Fill values as below and click on **Get New Access Token**
+1. After Authentication Complete, click proceed > Use Token
+
 
 ```
 Token Name:         <friendly name>
@@ -59,7 +54,7 @@ Scope :             <Leave empty>
 State :             <Leave empty>
 ```
 
-1. After Authentication Complete, click proceed > Use Token
+
 
 #### Step 3: Send HTTP Request to SharePoint with OAuth2 access Token from Postman
 
