@@ -3,7 +3,7 @@ layout: post
 title:  "Call SharePoint REST API from Postman using OAuth2 Authorization Flow"
 description: "Call SharePoint REST API from Postman using OAuth2 Authorization Flow"
 ---
-
+**INPROGRESS**
 In this Article, You'll learn how to **Call SharePoint REST API** from Postman using **OAuth2.0 Authorization Flow**
 
 ### Prerequisites:
@@ -29,7 +29,7 @@ Redirect Uri:
 Web - https://oauth.pstmn.io/v1/callback 
 // it means, redirect to Postman tool on successful authentication
 ```
-![New App Registration Form](https://github.com/vstudio365/blog/blob/116c955df3679a3325217c84573911823c10e3d9/assets/app-registration-form-01.jpg)
+![screenshot](https://github.com/vstudio365/blog/assets/app-registration-form-01.jpg)
 
 ![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
 
